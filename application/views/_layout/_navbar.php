@@ -1,16 +1,16 @@
 <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
   <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
     <a class="navbar-brand brand-logo" href="index.html">
-      <img src="<?=base_url('assets/template/images/logo.svg')?>" alt="logo" />
+      <img src="<?=base_url('assets/images/logo.png')?>" alt="logo" />
     </a>
     <a class="navbar-brand brand-logo-mini" href="index.html">
-      <img src="<?=base_url('assets/template/images/logo-mini.svg')?>" alt="logo" />
+      <img src="<?=base_url('assets/images/logo.png')?>" alt="logo" />
     </a>
   </div>
   <div class="navbar-menu-wrapper d-flex align-items-center">
-    <!-- <div class="col-md-6">
+    <div class="col-md-6">
       <input type="text" name="search" class="form-control form-control-md" placeholder="Search menu...">
-    </div> -->
+    </div>
     <!-- <ul class="navbar-nav navbar-nav-left header-links d-none d-md-flex">
       <li class="nav-item">
         <a href="#" class="nav-link">Schedule

@@ -11,7 +11,7 @@ var handle_tables = function () {
  
         // Load data for the table's content from an Ajax source
         "ajax": {
-            "url": "hub/getDataTables",
+            "url": "partner/getDataTables",
             "type": "POST",
             // "data": function ( data ) {
             //     data.start_date = $('#start_date').val();
@@ -29,27 +29,27 @@ var handle_tables = function () {
 }
 
 var handle_save = function () {
-    // e.preventDefault();
-    $.ajax({
-        type : "POST",
-        url : "hub/save",
-        dataType : "json",
-        data : $("#myForm").serialize(),
+	// e.preventDefault();
+	$.ajax({
+		type : "POST",
+		url : "partner/save",
+		dataType : "json",
+		data : $("#myForm").serialize(),
         success: function (data) {
             console.log(data);
             $('#message').text('Record tersimpan');
             $('#myForm').trigger('reset');
         }
-    });
+	});
 }
 
 var handle_new = function () {
-	add = "hub/add";
+	add = "partner/add";
 	$('#content-ajax').load(add);
 }
 
 var handle_main = function () {
-	main = "hub/main"
+	main = "partner/main"
 	$('#content-ajax').load(main, function () {
 		handle_tables();
 	})

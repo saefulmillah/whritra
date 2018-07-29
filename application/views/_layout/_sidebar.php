@@ -15,16 +15,16 @@
         <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
             <li class="nav-item">
-              <a class="nav-link" href="pages/ui-features/buttons.html">Hub</a>
+              <a class="nav-link" href="<?=site_url('master/hub')?>">Hub</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/ui-features/typography.html">Owner</a>
+              <a class="nav-link" href="<?=site_url('master/owner')?>">Owner</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/ui-features/typography.html">Partner</a>
+              <a class="nav-link" href="<?=site_url('master/partner')?>">Partner</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/ui-features/typography.html">Warehouse</a>
+              <a class="nav-link" href="<?=site_url('master/warehouse')?>">Warehouse</a>
             </li>
           </ul>
         </div>
