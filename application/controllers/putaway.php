@@ -1,4 +1,12 @@
 <?php 
-foreach ($variable as $key => $value) {
- 	# code...
- } ?>
+/**
+ * 
+ */
+class Putaway extends CI_Controller
+{
+	
+	function __construct(argument)
+	{
+		# code...
+	}
+}
