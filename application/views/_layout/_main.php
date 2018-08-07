@@ -5,7 +5,7 @@
 		<div class="container-fluid page-body-wrapper">
 			<?php echo $sidebar ?>
 			<div class="main-panel">
-				<div style="padding: 0.5rem 1rem;">
+				<div style="padding: 0.5rem 1rem;" class="shadow">
 				  <?php echo $title ?>
 				</div>
 		        <div class="content-wrapper">

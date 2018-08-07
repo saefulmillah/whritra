@@ -15,7 +15,7 @@
 			</form>
 		</div>
 		<div class="card-body">
-			<table class="table table-sm table-hover table-bordered" id="table">
+			<table class="table table-hover table-bordered" id="table">
 				<thead>
 					<tr>
 						<th>#</th>
