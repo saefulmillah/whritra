@@ -1,5 +1,5 @@
-#abaikan config
-applicaton/config/*
+#abaikanconfig
+application/config/*
 config/*
 
 .DS_Store
