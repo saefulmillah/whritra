@@ -1,3 +1,6 @@
+#abaikan config
+applicaton/config/
+
 .DS_Store
 
 application/cache/*
