@@ -15,16 +15,16 @@
         <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
             <li class="nav-item">
-              <a class="nav-link" href="<?=site_url('master/hub')?>">Hub</a>
+              <a class="nav-link" href="<?=site_url('Master/Hub')?>">Hub</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?=site_url('master/owner')?>">Owner</a>
+              <a class="nav-link" href="<?=site_url('Master/Owner')?>">Owner</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?=site_url('master/partner')?>">Partner</a>
+              <a class="nav-link" href="<?=site_url('Master/Partner')?>">Partner</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?=site_url('master/warehouse')?>">Warehouse</a>
+              <a class="nav-link" href="<?=site_url('Master/Warehouse')?>">Warehouse</a>
             </li>
           </ul>
         </div>
