@@ -9,4 +9,9 @@ class Putaway extends CI_Controller
 	{
 		# code...
 	}
+
+	public function get($value='')
+	{
+		# code...
+	}
 }
