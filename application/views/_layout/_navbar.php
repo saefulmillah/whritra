@@ -157,7 +157,7 @@
           <a class="dropdown-item">
             Check Inbox
           </a>
-          <a class="dropdown-item">
+          <a class="dropdown-item" href="<?php echo site_url('auth/logout') ?>">
             Sign Out
           </a>
         </div>
