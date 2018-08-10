@@ -1,12 +1,3 @@
-application/config/*
-config/*
-application/config/
-config/
-/application/config/*
-/config/*
-/application/config/
-/config/
-
 .DS_Store
 
 application/cache/*
