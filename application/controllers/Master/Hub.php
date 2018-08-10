@@ -8,7 +8,26 @@ class Hub extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
+		$this->load->library('ion_auth');
+		$this->load->model('menus_model', 'menu');
 		$this->load->model('MasterHub_model', 'MasterHub');
+		$arrGroups = array('admin','StaffWH');
+		if (!$this->ion_auth->logged_in())
+		{
+			// redirect them to the login page
+			redirect('auth/login', 'refresh');
+		} 
+		elseif (!$this->ion_auth->in_group($arrGroups))
+		{
+			$groups = '';
+			$i=0;
+			foreach ($arrGroups as $row) {
+				$groups .= $arrGroups[$i].',';
+				$i++;
+			}
+			// redirect them to the home page because they must be an administrator to view this
+			return show_error('You must be a part of '.$groups.' to view this page');
+		}
 	}
 
 	public function index()
@@ -16,6 +35,7 @@ class Hub extends CI_Controller
 		// layout
 		$data = array(
 			'title' => 'Master Hub',
+			'multilevel' => $this->menu->get_menu_for_level($parent=0),
 			'css'	=> array('css/dataTables.bootstrap4.min.css'),
 			'js'	=> array(
 							 	'js/jquery.dataTables.min.js',
@@ -27,7 +47,7 @@ class Hub extends CI_Controller
 
 		$layout = array('header' 	=> $this->load->view('_layout/_header', $data, TRUE),
 						'navbar'	=> $this->load->view('_layout/_navbar', '', TRUE),
-						'sidebar' 	=> $this->load->view('_layout/_sidebar', '', TRUE),
+						'sidebar' 	=> $this->load->view('_layout/_sidebar', $data, TRUE),
 						'index'  	=> $this->load->view('master/hub/index', '', TRUE),
 						'footer' 	=> $this->load->view('_layout/_footer', $data, TRUE),
 						);
